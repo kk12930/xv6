@@ -30,8 +30,7 @@ void primes(int lite_pipe[2])
 {
     close(lite_pipe[WR]);
     int date;
-    int *p1= &date;
-    if(!first_date(lite_pipe,p1))
+    if(!first_date(lite_pipe,&date))
     {
         exit(0);
     }
