@@ -2,9 +2,8 @@
 #include "kernel/stat.h"
 #include "user/user.h"
 
-#define RE 0
-#define WR 1
-
+static int RE = 0;
+static int WR = 1;
 int first_date(int p[2],int *date)
 {
     if(read(p[RE],date,sizeof(int)))

@@ -1,9 +1,8 @@
 #include "kernel/types.h"
 #include "kernel/stat.h"
 #include "user/user.h"
-
-#define RE 0
-#define WR 1
+static int RE = 0;
+static int WR = 1;
 
 int main(int argc,char * argv[])
 {
